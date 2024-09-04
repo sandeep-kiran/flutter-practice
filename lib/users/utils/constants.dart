@@ -4,8 +4,8 @@ const String invalidEmailError = "Please Enter Valid Email";
 const String passWordNullError = 'Please enter the Password';
 const String shortPassError = 'Password is too short';
 
-const String baseUrl = "http://172.16.117.62:3000/api/v1";
-const String imageUrl = "http://172.16.117.62:3000/";
+const String baseUrl = "http://172.16.116.93:3002/api/v1";
+const String imageUrl = "http://172.16.116.93:3002/";
 
 const urls = [
   "https://images.pexels.com/photos/640781/pexels-photo-640781.jpeg?auto=compress&cs=tinysrgb&w=600",

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'web_app/web_material_screen.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
+
+import 'presigned_url/presigned_url.dart';
 
 void main() {
   usePathUrlStrategy();
-  runApp(const WebHome());
+  // runApp(const AdaptiveLayoutPractice());
+  // runApp(const WebHome());
   // runApp(const MyApp());
+  // runApp(const MultipartUploadHome());
+  runApp(const PresignedURL());
 }
