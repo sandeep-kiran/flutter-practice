@@ -12,7 +12,6 @@ class PresignedURL extends StatefulWidget {
 }
 
 class _PresignedURLState extends State<PresignedURL> {
-  PlatformFile? _paths;
   String _uploadStatus = '';
   String _fileName = '';
   String _fileType = '';
@@ -34,7 +33,6 @@ class _PresignedURLState extends State<PresignedURL> {
       _file = File(pickedFile.path!);
 
       setState(() {
-        _paths = pickedFile;
         _fileName = pickedFile.name;
         _fileType = pickedFile.extension ??
             'png'; // Default to 'png' if extension is null
@@ -45,7 +43,6 @@ class _PresignedURLState extends State<PresignedURL> {
     } else {
       // Handle the case where no file is selected or file picker is canceled
       setState(() {
-        _paths = null;
         _fileName = '';
         _fileType = 'png';
       });
